@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    background-image: url(/Users/lewis/Desktop/WEB.html/silhouette-forest-landscape-background/bvny_bp58_210816.jpg);
+    min-height: 120vh;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    padding: 20px, 100px;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    user-select: none;
+    color: whitesmoke;
+    font-size: 2em;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.nav .nac a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1em;
+    color: whitesmoke;
+    padding: 10px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.nav .nac a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .4s;
+}
+
+.nav .nac a:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.nac .logi {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.nac .logi:hover {
+    background: white;
+    color: black;
+    transform-origin: right;
+}
+
+.wrapper {
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0, 0, 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper .form {
+    width: 100%;
+    padding: 40px;
+}
+
+.form h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: 500;
+    pointer-events: none;
+    color: black;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: aliceblue;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between ; 
+}
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a{
+     text-decoration: none;
+     color: #162938;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #162938;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.register p a{
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 2px #fff;
+    color: rgb(248, 4, 4);
+    transform: scale(1.5);
+}

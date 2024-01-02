@@ -1,0 +1,151 @@
+body{
+    font-weight: normal;
+}
+.nav{
+    background: transparent;
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s ease; 
+    position: fixed; 
+    z-index: 1000000; 
+}
+.nav .nav-bar{
+    display: none;
+    border: none;
+    outline: none;
+    position: fixed;
+}
+.nav .nav-bar .togler-icon {
+    width: 27px;
+    height: 3px;
+    background-color: rgb(8, 7, 7);
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.3s ease-out 0s;
+}
+ul{
+    list-style-type: none;
+}
+li{
+  text-decoration: none;
+}
+.menu-items li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav .menu-bar .menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav .menu-bar .menu-items li{
+    margin: 0 15px;    
+}
+.nav .menu-bar .menu-items li a{
+    color: rgb(56, 49, 53);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav .menu-bar .menu-items li a:hover{
+    color:#0087ca;
+    text-shadow: 0  0  25px;
+}
+.nav .menu-bar .menu-items li a:hover{
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+  .nav .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .social ul li a{
+    color: rgb(63, 8, 8);
+    font-size: 20px;
+    padding: 15px;
+  }
+  .nav .social ul li a:hover{
+    color: #0087ca;
+    text-shadow: 0  0 20px;
+    font-size: 25px;
+  }
+  .fol{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(216, 76, 155);
+  }
+  .span .fol:hover{
+    -webkit-text-size-adjust: 20px;
+
+  }
+  .sos {
+    margin: 0 90px;
+    float: right;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0 15px; 
+  }
+  .dropdown .li .a{
+    margin: 0 15px; 
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: transparent;
+    color: #0087ca;
+    font-size: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 0 0 25px;
+    font-size: 18px;
+  }
+  .back{
+    width: 100%;
+    background-image: url(/Users/lewis/Desktop/WEB.html/images/imperial-1668423586441-4998.jpg);
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .back .overlay{
+    background: linear-gradient(rgba(239,254,255,0.9) 40%, rgba(254, 255, 244,0.3) 70%, rgba(255,255,255,0.12));
+    height: 100%;
+    width: 100%;
+  }
